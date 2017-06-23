@@ -1,0 +1,4965 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 11909
+ETag: W/"2e85-VwCg8yV/gCp/P+Q5gtYaVQ"
+set-cookie: mongo-express=s%3AT1RU_R0hlI8C4TT9kGndYUaZYbS4dwwm.PhPYl8dDq12ooUmdNKOMpoT%2BPq5j95fDj35wDuuhP5c; Path=/; HttpOnly
+Date: Thu, 25 May 2017 04:15:13 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/admin/">admin</a></li>
+      
+      <li><a href="/db/company/">company</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+      <li><a href="/db/pet/">pet</a></li>
+      
+      <li><a href="/db/premiere/">premiere</a></li>
+      
+      <li><a href="/db/shopping/">shopping</a></li>
+      
+      <li><a href="/db/test/">test</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/admin/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/admin/">admin</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-admin" action="/admin" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="admin" childof="db-admin">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/company/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/company/">company</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-company" action="/company" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="company" childof="db-company">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glypMongoDB Server Information
+{
+    "metrics": {
+        "commands": {
+            "updateUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "renameCollection": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheSetFilter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "fsyncUnlock": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "top": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "usersInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "applyOps": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrMoveChunk": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "find": {
+                "failed": 0, 
+                "total": 1022
+            }, 
+            "compact": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createIndexes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "handshake": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "group": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "moveChunk": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_mergeAuthzCollections": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "explain": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_migrateClone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "checkShardingIndex": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "<UNKNOWN>": 0, 
+            "logRotate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getPrevError": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetStatus": {
+                "failed": 3, 
+                "total": 3
+            }, 
+            "replSetRequestVotes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "touch": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantRolesToUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shardConnPoolStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "diagLogging": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "splitChunk": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheClear": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getCmdLineOpts": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "insert": {
+                "failed": 0, 
+                "total": 386
+            }, 
+            "replSetInitiate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetConfig": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "fsync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "appendOplogNote": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "drop": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mapreduce": {
+                "shardedfinish": {
+                    "failed": 0, 
+                    "total": 0
+                }
+            }, 
+            "forceerror": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkAbort": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetSyncFrom": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetElect": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "connectionStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrCommitChunkSplit": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydbgetnonce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "setParameter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListPlans": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dataSize": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dbHash": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkStart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "authenticate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokeRolesFromRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantPrivilegesToRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "geoNear": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetFresh": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheClearFilters": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getParameter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropIndexes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listDatabases": {
+                "failed": 0, 
+                "total": 34
+            }, 
+            "killCursors": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "collStats": {
+                "failed": 0, 
+                "total": 17
+            }, 
+            "hostInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getShardVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cloneCollection": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "update": {
+                "failed": 0, 
+                "total": 79
+            }, 
+            "logout": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_transferMods": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "isMaster": {
+                "failed": 0, 
+                "total": 572867
+            }, 
+            "getShardMap": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shardingState": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetReconfig": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getLog": {
+                "failed": 0, 
+                "total": 3
+            }, 
+            "listCollections": {
+                "failed": 0, 
+                "total": 12
+            }, 
+            "connPoolSync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokePrivilegesFromRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetMaintenance": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "serverStatus": {
+                "failed": 0, 
+                "total": 58
+            }, 
+            "replSetStepDown": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "features": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "currentOp": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "connPoolStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrBalancerStop": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListQueryShapes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydb": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrBalancerStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrRemoveShardFromZone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListFilters": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shutdown": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getDiagnosticData": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "currentOpCtx": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_getUserCacheGeneration": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "validate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "repairDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "saslStart": {
+                "failed": 1, 
+                "total": 1625
+            }, 
+            "distinct": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "create": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "splitVector": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydbsaslstart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropAllRolesFromDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrCommitChunkMigration": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "invalidateUserCache": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrCommitChunkMerge": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "whatsmyuri": {
+                "failed": 0, 
+                "total": 56
+            }, 
+            "geoSearch": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "updateRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrAddShard": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "killOp": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "reIndex": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_isSelf": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "unsetSharding": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getnonce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listIndexes": {
+                "failed": 0, 
+                "total": 4
+            }, 
+            "collMod": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "count": {
+                "failed": 0, 
+                "total": 111
+            }, 
+            "filemd5": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "setShardVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "parallelCollectionScan": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "setFeatureCompatibilityVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrAddShardToZone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrUpdateZoneKeyRange": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "delete": {
+                "failed": 0, 
+                "total": 62
+            }, 
+            "getMore": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "rolesInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetRBID": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "resync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "saslContinue": {
+                "failed": 0, 
+                "total": 3225
+            }, 
+            "repairCursor": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "driverOIDTest": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getLastError": {
+                "failed": 0, 
+                "total": 29
+            }, 
+            "convertToCapped": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetHeartbeat": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "ping": {
+                "failed": 0, 
+                "total": 31689
+            }, 
+            "availableQueryOptions": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropAllUsersFromDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "lockInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cloneCollectionAsCapped": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listCommands": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrBalancerStart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "profile": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_configsvrSetFeatureCompatibilityVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantRolesToRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetFreeze": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "clone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mapReduce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "eval": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "aggregate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetUpdatePosition": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetStepUp": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mergeChunks": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokeRolesFromUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "authSchemaUpgrade": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "findAndModify": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dbStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkCommit": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cleanupOrphaned": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "buildInfo": {
+                "failed": 0, 
+                "total": 107
+            }, 
+            "resetError": {
+                "failed": 0, 
+                "total": 0
+            }
+        }, 
+        "storage": {
+            "freelist": {
+                "search": {
+                    "requests": 404, 
+                    "scanned": 0, 
+                    "bucketExhausted": 0
+                }
+            }
+        }, 
+        "getLastError": {
+            "wtime": {
+                "num": 0, 
+                "totalMillis": 0
+            }, 
+            "wtimeouts": 0
+        }, 
+        "queryExecutor": {
+            "scanned": 171, 
+            "scannedObjects": 4642
+        }, 
+        "cursor": {
+            "timedOut": 0, 
+            "open": {
+                "pinned": 0, 
+                "total": 0, 
+                "noTimeout": 0
+            }
+        }, 
+        "record": {
+            "moves": 5
+        }, 
+        "repl": {
+            "preload": {
+                "docs": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "indexes": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }
+            }, 
+            "network": {
+                "bytes": 0, 
+                "readersCreated": 0, 
+                "getmores": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "initialSync": {
+                "failures": 0, 
+                "completed": 0, 
+                "failedAttempts": 0
+            }, 
+            "buffer": {
+                "count": 0, 
+                "sizeBytes": 0, 
+                "maxSizeBytes": 0
+            }, 
+            "executor": {
+                "unsignaledEvents": 0, 
+                "queues": {
+                    "sleepers": 0, 
+                    "free": 0, 
+                    "dbWorkInProgress": 0, 
+                    "networkInProgress": 0, 
+                    "ready": 0, 
+                    "exclusiveInProgress": 0
+                }, 
+                "shuttingDown": false, 
+                "networkInterface": "\nNetworkInterfaceASIO Operations' Diagnostic:\nOperation:    Count:   \nConnecting    0        \nIn Progress   0        \nSucceeded     0        \nCanceled      0        \nFailed        0        \nTimed Out     0        \n\n", 
+                "eventWaiters": 0, 
+                "counters": {
+                    "eventCreated": 0, 
+                    "scheduledDBWork": 0, 
+                    "eventWait": 0, 
+                    "waits": 0, 
+                    "schedulingFailures": 0, 
+                    "cancels": 0, 
+                    "scheduledNetCmd": 0, 
+                    "scheduledXclWork": 0, 
+                    "scheduledWorkAt": 0, 
+                    "scheduledWork": 0
+                }
+            }, 
+            "apply": {
+                "batches": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "attemptsToBecomeSecondary": 0, 
+                "ops": 0
+            }
+        }, 
+        "ttl": {
+            "passes": 46532, 
+            "deletedDocuments": 0
+        }, 
+        "operation": {
+            "writeConflicts": 0, 
+            "scanAndOrder": 0
+        }, 
+        "document": {
+            "deleted": 348, 
+            "updated": 68, 
+            "inserted": 387, 
+            "returned": 2436
+        }
+    }, 
+    "process": "mongod", 
+    "pid": 22422, 
+    "connections": {
+        "current": 2, 
+        "available": 51198, 
+        "totalCreated": 1762
+    }, 
+    "locks": {
+        "Metadata": {
+            "acquireCount": {
+                "W": 6, 
+                "w": 1
+            }
+        }, 
+        "Global": {
+            "acquireCount": {
+                "r": 16393955, 
+                "W": 6, 
+                "w": 565
+            }
+        }, 
+        "Collection": {
+            "timeAcquiringMicros": {
+                "W": 50045
+            }, 
+            "acquireWaitCount": {
+                "W": 12
+            }, 
+            "acquireCount": {
+                "R": 8196541, 
+                "W": 551
+            }
+        }, 
+        "MMAPV1Journal": {
+            "timeAcquiringMicros": {
+                "R": 78981, 
+                "w": 3079
+            }, 
+            "acquireWaitCount": {
+                "R": 3, 
+                "w": 2
+            }, 
+            "acquireCount": {
+                "R": 27251456, 
+                "r": 8196654, 
+                "W": 41, 
+                "w": 1388
+            }
+        }, 
+        "Database": {
+            "acquireCount": {
+                "R": 15, 
+                "r": 8196643, 
+                "W": 14, 
+                "w": 551
+            }
+        }
+    }, 
+    "storageEngine": {
+        "readOnly": false, 
+        "supportsCommittedReads": false, 
+        "name": "mmapv1", 
+        "persistent": true
+    }, 
+    "globalLock": {
+        "totalTime": 2791957809000, 
+        "currentQueue": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }, 
+        "activeClients": {
+            "total": 10, 
+            "writers": 0, 
+            "readers": 0
+        }
+    }, 
+    "extra_info": {
+        "note": "fields vary by platform", 
+        "page_faults": 1216
+    }, 
+    "uptime": 2791958.0, 
+    "network": {
+        "physicalBytesOut": 120997133, 
+        "numRequests": 1222884, 
+        "bytesOut": 120997133, 
+        "physicalBytesIn": 34756857, 
+        "bytesIn": 34756857
+    }, 
+    "uptimeMillis": 2791957832, 
+    "version": "3.4.4", 
+    "dur": {
+        "compression": 0.0, 
+        "journaledMB": 0.0, 
+        "commits": 30, 
+        "writeToDataFilesMB": 0.0, 
+        "commitsInWriteLock": 0, 
+        "earlyCommits": 0, 
+        "timeMs": {
+            "writeToJournal": 0, 
+            "prepLogBuffer": 0, 
+            "remapPrivateView": 0, 
+            "commits": 1, 
+            "commitsInWriteLock": 0, 
+            "dt": 3071, 
+            "writeToDataFiles": 0
+        }
+    }, 
+    "localTime": "2017-06-18T22:11:15.206000", 
+    "mem": {
+        "resident": 37, 
+        "supported": true, 
+        "virtual": 768, 
+        "mappedWithJournal": 480, 
+        "mapped": 240, 
+        "bits": 64
+    }, 
+    "opcountersRepl": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 0, 
+        "query": 0, 
+        "delete": 0
+    }, 
+    "opLatencies": {
+        "commands": {
+            "latency": 56406730, 
+            "ops": 609728
+        }, 
+        "reads": {
+            "latency": 755778, 
+            "ops": 1172
+        }, 
+        "writes": {
+            "latency": 566446, 
+            "ops": 556
+        }
+    }, 
+    "uptimeEstimate": 2791957, 
+    "host": "WP-SIGNALS-MONGO-DB", 
+    "tcmalloc": {
+        "generic": {
+            "current_allocated_bytes": 65984152, 
+            "heap_size": 71966720
+        }, 
+        "tcmalloc": {
+            "formattedString": "------------------------------------------------\nMALLOC:       65984152 (   62.9 MiB) Bytes in use by application\nMALLOC: +      1171456 (    1.1 MiB) Bytes in page heap freelist\nMALLOC: +       534184 (    0.5 MiB) Bytes in central cache freelist\nMALLOC: +      1668480 (    1.6 MiB) Bytes in transfer cache freelist\nMALLOC: +       478528 (    0.5 MiB) Bytes in thread cache freelists\nMALLOC: +      1335488 (    1.3 MiB) Bytes in malloc metadata\nMALLOC:   ------------\nMALLOC: =     71172288 (   67.9 MiB) Actual memory used (physical + swap)\nMALLOC: +      2129920 (    2.0 MiB) Bytes released to OS (aka unmapped)\nMALLOC:   ------------\nMALLOC: =     73302208 (   69.9 MiB) Virtual address space used\nMALLOC:\nMALLOC:            505              Spans in use\nMALLOC:             14              Thread heaps in use\nMALLOC:           4096              Tcmalloc page size\n------------------------------------------------\nCall ReleaseFreeMemory() to release freelist memory to the OS (via madvise()).\nBytes released to the OS take up virtual address space but no physical memory.\n", 
+            "pageheap_unmapped_bytes": 2129920, 
+            "current_total_thread_cache_bytes": 478528, 
+            "central_cache_free_bytes": 534184, 
+            "max_total_thread_cache_bytes": 63963136, 
+            "total_free_bytes": 2681192, 
+            "transfer_cache_free_bytes": 1668480, 
+            "pageheap_free_bytes": 1171456, 
+            "aggressive_memory_decommit": 0, 
+            "thread_cache_free_bytes": 478528
+        }
+    }, 
+    "backgroundFlushing": {
+        "last_finished": "2017-06-18T22:10:44.977000", 
+        "last_ms": 0, 
+        "flushes": 46532, 
+        "average_ms": 0.13913006103326742, 
+        "total_ms": 6474
+    }, 
+    "opcounters": {
+        "getmore": 0, 
+        "insert": 387, 
+        "update": 76, 
+        "command": 609840, 
+        "query": 1062, 
+        "delete": 85
+    }, 
+    "ok": 1.0, 
+    "asserts": {
+        "msg": 0, 
+        "rollovers": 0, 
+        "regular": 0, 
+        "warning": 0, 
+        "user": 14
+    }
+},
+{
+    "storageEngines": [
+        "devnull", 
+        "ephemeralForTest", 
+        "mmapv1", 
+        "wiredTiger"
+    ], 
+    "maxBsonObjectSize": 16777216, 
+    "ok": 1.0, 
+    "bits": 64, 
+    "modules": [], 
+    "openssl": {
+        "compiled": "OpenSSL 1.0.2g  1 Mar 2016", 
+        "running": "OpenSSL 1.0.2g  1 Mar 2016"
+    }, 
+    "javascriptEngine": "mozjs", 
+    "version": "3.4.4", 
+    "gitVersion": "888390515874a9debd1b6c5d36559ca86b44babd", 
+    "versionArray": [
+        3, 
+        4, 
+        4, 
+        0
+    ], 
+    "debug": false, 
+    "buildEnvironment": {
+        "cxxflags": "-Woverloaded-virtual -Wno-maybe-uninitialized -std=c++11", 
+        "cc": "/opt/mongodbtoolchain/v2/bin/gcc: gcc (GCC) 5.4.0", 
+        "linkflags": "-pthread -Wl,-z,now -rdynamic -Wl,--fatal-warnings -fstack-protector-strong -fuse-ld=gold -Wl,--build-id -Wl,-z,noexecstack -Wl,--warn-execstack -Wl,-z,relro", 
+        "distarch": "x86_64", 
+        "cxx": "/opt/mongodbtoolchain/v2/bin/g++: g++ (GCC) 5.4.0", 
+        "ccflags": "-fno-omit-frame-pointer -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -Werror -O2 -Wno-unused-local-typedefs -Wno-unused-function -Wno-deprecated-declarations -Wno-unused-but-set-variable -Wno-missing-braces -fstack-protector-strong -fno-builtin-memcmp", 
+        "target_arch": "x86_64", 
+        "distmod": "ubuntu1604", 
+        "target_os": "linux"
+    }, 
+    "sysInfo": "deprecated", 
+    "allocator": "tcmalloc"
+},
+{
+    "totalSize": 251658240.0, 
+    "ok": 1.0, 
+    "databases": [
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "system.version", 
+                "system.indexes", 
+                "system.users"
+            ], 
+            "name": "admin", 
+            "empty": false
+        }, 
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "system.indexes", 
+                "sites", 
+                "users", 
+                "logs"
+            ], 
+            "name": "wpsignals", 
+            "empty": false
+        }, 
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "startup_log", 
+                "system.indexes"
+            ], 
+            "name": "local", 
+            "empty": false
+        }
+    ]
+},
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 18 Jun 2017 17:33:06 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Set-Cookie: adminer_sid=teiqpmib0iuvqium3dnhf5ra06; path=/; HttpOnly
+Set-Cookie: adminer_key=e7a3724c7e9ff5bc38548ce36ecc0acc; path=/; HttpOnly
+Cache-Control: no-cache
+X-Frame-Options: deny
+X-XSS-Protection: 0
+
+a3f
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="origin-when-crossorigin">
+<title>Login - Adminer</title>
+<link rel="stylesheet" type="text/css" href="?file=default.css&amp;version=4.2.4">
+<script type="text/javascript" src="?file=functions.js&amp;version=4.2.4"></script>
+<link rel="shortcut icon" type="image/x-icon" href="?file=favicon.ico&amp;version=4.2.4">
+<link rel="apple-touch-icon" href="?file=favicon.ico&amp;version=4.2.4">
+<link rel="stylesheet" type="text/css" href="adminer.css">
+
+<body class="ltr nojs" onkeydown="bodyKeydown(event);" onclick="bodyClick(event);" onload="verifyVersion('4.2.4');">
+<script type="text/javascript">
+document.body.className = document.body.className.replace(/ nojs/, ' js');
+var offlineMessage = 'You are offline.';
+</script>
+
+<div id="help" class="jush-sql jsonly hidden" onmouseover="helpOpen = 1;" onmouseout="helpMouseout(this, event);"></div>
+
+<div id="content">
+<h2>Login</h2>
+<div id='ajaxstatus' class='jsonly hidden'></div>
+<form action='' method='post'>
+<table cellspacing="0">
+<tr><th>System<td><select name='auth[driver]' onchange="loginDriver(this);"><option value="server" selected>MySQL<option value="sqlite">SQLite 3<option value="sqlite2">SQLite 2<option value="pgsql">PostgreSQL<option value="oracle">Oracle<option value="mssql">MS SQL<option value="firebird">Firebird (alpha)<option value="simpledb">SimpleDB<option value="mongo">MongoDB (beta)<option value="elastic">Elasticsearch (beta)</select><tr><th>Server<td><input name="auth[server]" value="" title="hostname[:port]" placeholder="localhost" autocapitalize="off">
+<tr><th>Username<td><input name="auth[username]" id="username" value="" autocapitalize="off">
+<tr><th>Password<td><input type="password" name="auth[password]">
+<tr><th>Database<td><input name="auth[db]" value="" autocapitalize="off">
+</table>
+<script type="text/javascript">
+var username = document.getElementById('username');
+focus(username);
+username.form['auth[driver]'].onchange();
+</script>
+<p><input type='submit' value='Login'>
+<label><input type='checkbox' name='auth[permanent]' value='1'>Permanent login</label>
+<div></div>
+</form>
+</div>
+
+<div id="menu">
+<h1>
+<a href='https://www.adminer.org/' target='_blank' id='h1'>Adminer</a> <span class="version">4.2.4</span>
+<a href="https://www.adminer.org/#download" target="_blank" id="version"></a>
+</h1>
+</div>
+<script type="text/javascript">setupSubmitHighlight(document);</script>
+
+0
+
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 12252
+ETag: W/"2fdc-1fWla8g/H+TFIh/x5EI/ng"
+set-cookie: mongo-express=s%3A7zzeWYYcB9jUFE_Hn3DsJE3LtKOABu08.0KUMuSh3oyQE7%2BUM0uhfzwLMrLVPXurzuzu4GjmSpY0; Path=/; HttpOnly
+Date: Sun, 18 Jun 2017 16:28:18 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/admin/">admin</a></li>
+      
+      <li><a href="/db/dashboard/">dashboard</a></li>
+      
+      <li><a href="/db/dealer-dashboard/">dealer-dashboard</a></li>
+      
+      <li><a href="/db/detection-dashboard/">detection-dashboard</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+      <li><a href="/db/location/">location</a></li>
+      
+      <li><a href="/db/vender-dashboard/">vender-dashboard</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 stylHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 8959
+ETag: W/"22ff-qO0FGudztwOsMw2ENfIo4g"
+set-cookie: mongo-express=s%3AoEJaMAtXeEbDRyKC91ObtyscDNrw2B4I.jJtHujWZ5Em8ke3rTD1IXBJSZVIzFo7CSHwgmuwN0lw; Path=/; HttpOnly
+Date: Sun, 18 Jun 2017 11:24:38 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/admin/">admin</a></li>
+      
+      <li><a href="/db/convenekb/">convenekb</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/admin/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/admin/">admin</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-admin" action="/admin" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="admin" childof="db-admin">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/convenekb/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/convenekb/">convenekb</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-convenekb" action="/convenekb" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="convenekb" childof="db-convenekb">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/local/">local</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-local" action="/local" style="marHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 9349
+ETag: W/"2485-v1bQSuFUEPoc0Qw16S6ELA"
+set-cookie: mongo-express=s%3ApJaeWqMvgfvHNVRPrMTwmocGeDvDn3po.S2UG%2BBLLJrqv8OGLMK2y8v2mFD2h7%2BZLcpT7g%2B36LxI; Path=/; HttpOnly
+Date: Sun, 18 Jun 2017 11:06:11 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/images/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  <script src="/javascripts/jquery-2.1.4.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/renderjson.js"></script>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar-nav navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/images/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+
+
+
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/local/">local</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+
+<!--       <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+      </ul>
+ -->
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/local/">local</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-local" action="/local" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="local" childof="db-local">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 6860
+ETag: "8081642"
+Set-Cookie: mongo-express=s%3AiGW2sDojvDmLSAWNOw78czMm.6CJJkLPVMqylHNYht3fuTf2Ay8B7na0%2BgJ%2FoKaqzAlI; Path=/; HttpOnly
+Date: Mon, 08 May 2017 17:26:13 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="stylesheets/bootstrap.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet" />
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="javascripts/jquery-1.7.2.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+
+  
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="">Mongo Express</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="">Home</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          
+          <li class="nav-header" onclick="$('#toggle_admin').collapse('toggle')">
+            admin
+            <i class="icon-chevron-down pull-right"></i>
+          </li>
+          <li><a href="db/admin"><i class="icon-folder-open"></i> View Database</a></li>
+            <ul class="unstyled collapse nav nav-list" id="toggle_admin">
+            
+              
+            
+            
+            
+            
+            </ul>
+          <li class="divider"></li>
+          
+          <li class="nav-header" onclick="$('#toggle_mobileinfo').collapse('toggle')">
+            mobileinfo
+            <i class="icon-chevron-down pull-right"></i>
+          </li>
+          <li><a href="db/mobileinfo"><i class="icon-folder-open"></i> View Database</a></li>
+            <ul class="unstyled collapse nav nav-list" id="toggle_mobileinfo">
+            
+            <li><a href="db/mobileinfo/system.indexes"><i class="icon-list-alt"></i> system.indexes</a></li>
+                
+              
+            
+            
+            
+            </ul>
+          <li class="divider"></li>
+          
+          <li claHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 4892
+ETag: "-162350838"
+Set-Cookie: mongo-express=s%3AXGqyPHoAM9RvdJN0zpUFw1Ja.69pmRapZ34NhAVdMuYJswL1Kw9JW56chD3njr%2BNTU%2FQ; Path=/; HttpOnly
+Date: Sun, 18 Jun 2017 01:21:49 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="stylesheets/bootstrap.css" rel="stylesheet">
+  <link href="stylesheets/style.css" rel="stylesheet" />
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="javascripts/jquery-1.7.2.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+
+  
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="">Mongo Express</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="">Home</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          
+          <li class="nav-header" onclick="$('#toggle_unexpected').collapse('toggle')">
+            unexpected
+            <i class="icon-chevron-down pull-right"></i>
+          </li>
+          <li><a href="db/unexpected"><i class="icon-folder-open"></i> View Database</a></li>
+            <ul class="unstyled collapse nav nav-list" id="toggle_unexpected">
+            <li><a href="db/unexpected/comments"><i class="icon-list-alt"></i> comments</a></li>
+                <li><a href="db/unexpected/features"><i class="icon-list-alt"></i> features</a></li>
+                <li><a href="db/unexpected/likes"><i class="icon-list-alt"></i> likes</a></li>
+                <li><a href="db/unexpected/notifications"><i class="icon-list-alt"></i> notifications</a></li>
+                <li><a href="db/unexpected/stories"><i class="icon-list-alt"></i> stories</a></li>
+                <li><a href="db/unexpected/system.indexes"><i class="icon-list-alt"></i> system.indexes</a></li>
+                <li><a href="db/unexpected/users"><i class="icon-list-alt"></i> users</a></li>
+                
+              
+            
+            </ul>
+          <li class="divider"></li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <div class="span9">
+      <ul class="breadcrumb">
+      
+        <li class="active">
+          Home
+        </li>
+      
+      </ul>
+
+      <div class="page-header">
+      <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+      
+
+
+
+<h2>Server Status</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <td class="span2"><strong>Hostname</strong></td>
+    <td class="span3" id="dbHost">ip-172-31-38-41</td>
+    <td class="span2"><strong>MongoDB Version</strong></td>
+    <td class="span3" id="dbVersion">2.6.12</td>
+  </tr>
+  <tr>
+    <td><strong>Uptime</strong></td>
+    <td>24442225 seconds  (282 days) </td>
+    <td><strong>Server Time</strong></td>
+    <td>Sun, 18 Jun 2017 01:21:49 GMT</td>
+  </tr>
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+    <td><strong>Current Connections</strong></td>
+    <td>9</td>
+    <td><strong>Available Connections</strong></td>
+    <td>51191</td>
+  </tr>
+  <tr>
+    <td><strong>Active Clients</strong></td>
+    <td>0</td>
+    <td><strong>Queued Operations</strong></td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td><strong>Clients Reading</strong></td>
+    <td>0</td>
+    <td><strong>Clients Writing</strong></td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td><strong>Read Lock Queue</strong></td>
+    <td>0</td>
+    <td><strong>Write Lock Queue</strong></td>
+    <td>0</td>
+  </tr>
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+    <td><strong>Disk Flushes</strong></td>
+    <td>407369</td>
+    <td><strong>Last Flush</strong></td>
+    <td>Sun, 18 Jun 2017 01:21:21 GMT</td>
+  </tr>
+  <tr>
+    <td><strong>Time Spent Flushing</strong></td>
+    <td>24173 ms</td>
+    <td><strong>Average Flush Time</strong></td>
+    <td>0.05933932135238568 ms</td>
+  </tr>
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+    <td><strong>Total Inserts</strong></td>
+    <td>6291</td>
+    <td><strong>Total Queries</strong></td>
+    <td>1804308</td>
+  </tr>
+  <tr>
+    <td><strong>Total Updates</strong></td>
+    <td>7739</td>
+    <td><strong>Total Deletes</strong></td>
+    <td>85</td>
+  </tr>
+</table>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+<script>
+$(document).ready(function(){
+  $(".sidebar-nav").find("a").each(function(){
+    if ($(this).text().length > 20) {
+      $(this).tooltip({
+        title: $(this).text(),
+     MongoDB Server Information
+{
+    "metrics": {
+        "commands": {
+            "updateUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "renameCollection": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheSetFilter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "top": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "usersInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "applyOps": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "setParameter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "find": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "compact": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createIndexes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "handshake": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "group": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "moveChunk": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_mergeAuthzCollections": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "explain": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_migrateClone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "checkShardingIndex": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "<UNKNOWN>": 0, 
+            "logRotate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getPrevError": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantRolesToUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shardConnPoolStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "diagLogging": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "splitChunk": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheClear": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getCmdLineOpts": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "insert": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetInitiate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetConfig": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "fsync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "appendOplogNote": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "drop": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mapreduce": {
+                "shardedfinish": {
+                    "failed": 0, 
+                    "total": 0
+                }
+            }, 
+            "_recvChunkAbort": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetSyncFrom": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "connectionStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "touch": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkStatus": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydbgetnonce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListPlans": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dataSize": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dbHash": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "medianKey": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkStart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "authenticate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cursorInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokeRolesFromRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantPrivilegesToRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "geoNear": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetFresh": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheClearFilters": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getParameter": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropIndexes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listDatabases": {
+                "failed": 0, 
+                "total": 2
+            }, 
+            "collStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "hostInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getShardVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cloneCollection": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "update": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "logout": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_transferMods": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "isMaster": {
+                "failed": 0, 
+                "total": 1
+            }, 
+            "getShardMap": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shardingState": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetReconfig": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getLog": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "connPoolSync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokePrivilegesFromRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetMaintenance": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "serverStatus": {
+                "failed": 0, 
+                "total": 1
+            }, 
+            "replSetStepDown": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "features": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "connPoolStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListQueryShapes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydb": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "forceerror": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "planCacheListFilters": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "shutdown": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listCollections": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "currentOpCtx": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_getUserCacheGeneration": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "validate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "repairDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "saslStart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "distinct": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "create": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "splitVector": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "copydbsaslstart": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropAllRolesFromDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "invalidateUserCache": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "whatsmyuri": {
+                "failed": 0, 
+                "total": 1
+            }, 
+            "geoSearch": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "updateRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "reIndex": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_isSelf": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "unsetSharding": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getnonce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listIndexes": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "collMod": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "count": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "filemd5": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "setShardVersion": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "parallelCollectionScan": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "writebacklisten": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "delete": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "rolesInfo": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetGetRBID": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "resync": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "saslContinue": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "repairCursor": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "driverOIDTest": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "getLastError": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "convertToCapped": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetHeartbeat": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "ping": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "availableQueryOptions": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dropAllUsersFromDatabase": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cloneCollectionAsCapped": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "listCommands": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "profile": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetElect": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "cleanupOrphaned": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetFreeze": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "clone": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mapReduce": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "eval": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "aggregate": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "replSetUpdatePosition": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "mergeChunks": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "revokeRolesFromUser": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "createRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "authSchemaUpgrade": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "findAndModify": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "dbStats": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "_recvChunkCommit": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "grantRolesToRole": {
+                "failed": 0, 
+                "total": 0
+            }, 
+            "buildInfo": {
+                "failed": 0, 
+                "total": 3
+            }, 
+            "resetError": {
+                "failed": 0, 
+                "total": 0
+            }
+        }, 
+        "storage": {
+            "freelist": {
+                "search": {
+                    "requests": 0, 
+                    "scanned": 0, 
+                    "bucketExhausted": 0
+                }
+            }
+        }, 
+        "getLastError": {
+            "wtime": {
+                "num": 0, 
+                "totalMillis": 0
+            }, 
+            "wtimeouts": 0
+        }, 
+        "queryExecutor": {
+            "scanned": 0, 
+            "scannedObjects": 0
+        }, 
+        "cursor": {
+            "timedOut": 0, 
+            "open": {
+                "pinned": 0, 
+                "total": 0, 
+                "noTimeout": 0
+            }
+        }, 
+        "record": {
+            "moves": 0
+        }, 
+        "repl": {
+            "buffer": {
+                "count": 0, 
+                "sizeBytes": 0, 
+                "maxSizeBytes": 268435456
+            }, 
+            "apply": {
+                "batches": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "preload": {
+                "docs": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "indexes": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }
+            }, 
+            "network": {
+                "bytes": 0, 
+                "readersCreated": 0, 
+                "getmores": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }
+        }, 
+        "ttl": {
+            "passes": 3114, 
+            "deletedDocuments": 0
+        }, 
+        "operation": {
+            "writeConflicts": 0, 
+            "fastmod": 0, 
+            "scanAndOrder": 0, 
+            "idhack": 0
+        }, 
+        "document": {
+            "deleted": 0, 
+            "updated": 0, 
+            "inserted": 0, 
+            "returned": 0
+        }
+    }, 
+    "process": "G:\\Mongo DB\\bin\\mongod.exe", 
+    "pid": 2368, 
+    "connections": {
+        "current": 1, 
+        "available": 999999, 
+        "totalCreated": 7
+    }, 
+    "locks": {
+        "Global": {
+            "timeAcquiringMicros": {
+                "r": 27134
+            }, 
+            "acquireWaitCount": {
+                "r": 1
+            }, 
+            "acquireCount": {
+                "r": 573033, 
+                "W": 5, 
+                "w": 8
+            }
+        }, 
+        "Collection": {
+            "acquireCount": {
+                "R": 298960
+            }
+        }, 
+        "MMAPV1Journal": {
+            "timeAcquiringMicros": {
+                "R": 817874, 
+                "w": 49
+            }, 
+            "acquireWaitCount": {
+                "R": 4, 
+                "w": 3
+            }, 
+            "acquireCount": {
+                "R": 1830398, 
+                "r": 286508, 
+                "w": 20
+            }
+        }, 
+        "Database": {
+            "acquireCount": {
+                "R": 2, 
+                "r": 286508, 
+                "W": 8
+            }
+        }
+    }, 
+    "cursors": {
+        "clientCursors_size": 0, 
+        "pinned": 0, 
+        "totalNoTimeout": 0, 
+        "timedOut": 0, 
+        "note": "deprecated, use server status metrics", 
+        "totalOpen": 0
+    }, 
+    "storageEngine": {
+        "name": "mmapv1"
+    }, 
+    "globalLock": {
+        "totalTime": 186887099000, 
+        "currentQueue": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }, 
+        "activeClients": {
+            "total": 8, 
+            "writers": 0, 
+            "readers": 0
+        }
+    }, 
+    "extra_info": {
+        "page_faults": 18307, 
+        "note": "fields vary by platform", 
+        "ramMB": 32704, 
+        "totalPageFileMB": 65472, 
+        "usagePageFileMB": 152, 
+        "availPageFileMB": 52112
+    }, 
+    "uptime": 186887.0, 
+    "network": {
+        "numRequests": 7, 
+        "bytesOut": 2638, 
+        "bytesIn": 439
+    }, 
+    "uptimeMillis": 186887131, 
+    "version": "3.0.6", 
+    "dur": {
+        "compression": 0.0, 
+        "journaledMB": 0.0, 
+        "commits": 30, 
+        "writeToDataFilesMB": 0.0, 
+        "commitsInWriteLock": 0, 
+        "earlyCommits": 0, 
+        "timeMs": {
+            "writeToJournal": 0, 
+            "prepLogBuffer": 0, 
+            "remapPrivateView": 0, 
+            "commits": 0, 
+            "commitsInWriteLock": 0, 
+            "dt": 3062, 
+            "writeToDataFiles": 0
+        }
+    }, 
+    "mem": {
+        "resident": 71, 
+        "supported": true, 
+        "virtual": 475, 
+        "mappedWithJournal": 320, 
+        "mapped": 160, 
+        "bits": 64
+    }, 
+    "opcountersRepl": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 0, 
+        "query": 0, 
+        "delete": 0
+    }, 
+    "uptimeEstimate": 186686.0, 
+    "host": "PVSERVER", 
+    "writeBacksQueued": false, 
+    "localTime": "2017-06-17T16:59:10.595000", 
+    "backgroundFlushing": {
+        "last_finished": "2017-06-17T16:58:28.614000", 
+        "last_ms": 0, 
+        "flushes": 3114, 
+        "average_ms": 0.014771997430956968, 
+        "total_ms": 46
+    }, 
+    "opcounters": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 8, 
+        "query": 1, 
+        "delete": 0
+    }, 
+    "ok": 1.0, 
+    "asserts": {
+        "msg": 0, 
+        "rollovers": 0, 
+        "regular": 0, 
+        "warning": 0, 
+        "user": 0
+    }
+},
+{
+    "ok": 1.0, 
+    "bits": 64, 
+    "OpenSSLVersion": "", 
+    "targetMinOS": "Windows Server 2003 SP2", 
+    "javascriptEngine": "V8", 
+    "version": "3.0.6", 
+    "allocator": "tcmalloc", 
+    "versionArray": [
+        3, 
+        0, 
+        6, 
+        0
+    ], 
+    "debug": false, 
+    "compilerFlags": "/TP /nologo /EHsc /W3 /wd4355 /wd4800 /wd4267 /wd4244 /wd4290 /wd4068 /wd4351 /we4099 /we4930 /Z7 /errorReport:none /MT /O2 /Oy- /Gw /Gy /Zc:inline", 
+    "maxBsonObjectSize": 16777216, 
+    "sysInfo": "windows sys.getwindowsversion(major=6, minor=1, build=7601, platform=2, service_pack='Service Pack 1') BOOST_LIB_VERSION=1_49", 
+    "loaderFlags": "", 
+    "gitVersion": "1ef45a23a4c5e3480ac919b28afcba3c615488f2"
+},
+{
+    "totalSize": 167772160.0, 
+    "ok": 1.0, 
+    "databases": [
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "system.indexes", 
+                "startup_log"
+            ], 
+            "name": "local", 
+            "empty": false
+        }, 
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "system.indexes", 
+                "REQUEST_YOUR_DATA"
+            ], 
+            "name": "REQUEST_YOUR_DATA", 
+            "empty": false
+        }
+    ]
+},
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 9258
+ETag: W/"242a-oZgtNbzrT/Iv8yZE7wynwg"
+set-cookie: mongo-express=s%3ACO-s_VwpbLHGb0sMETgNKRnC5ELNQHwd.nVDgZVIIptEjeG2xAITPQWWUbwlxK7s38S4Mxsgns4s; Path=/; HttpOnly
+Date: Sat, 17 Jun 2017 16:36:11 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/images/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  <script src="/javascripts/jquery-2.1.4.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+  <script src="/javascripts/renderjson.js"></script>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar-nav navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/images/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+
+
+
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/bvr/">bvr</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+
+<!--       <ul class="nav navbar-nav navbar-right">
+        <li><a href="../navbar/">Default</a></li>
+        <li><a href="../navbar-static-top/">Static top</a></li>
+        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+      </ul>
+ -->
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+
+<h2>Databases</h2>
+<table class="table table-bordered table-striped table-condensed">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/bvr/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/bvr/">bvr</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-bvr" action="/bvr" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="bvr" childof="db-bvr">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/local/">local</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-local" action="/local" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="local" childof="db-local">
+        <span class="glyphicon glyphicon-trashHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 8959
+ETag: W/"22ff-u76itMYG4KGPI5N/za2VZA"
+set-cookie: mongo-express=s%3A4-qM_SU3pZ9FBB4NemROtKZxnkvB06gg.BmejdyFcv1kVUJo4zPxt7Q2M1xsE%2BihL2J7SzsqKXD4; Path=/; HttpOnly
+Date: Sat, 17 Jun 2017 11:44:40 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/admin/">admin</a></li>
+      
+      <li><a href="/db/convenekb/">convenekb</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/admin/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/admin/">admin</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-admin" action="/admin" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="admin" childof="db-admin">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/convenekb/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/convenekb/">convenekb</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-convenekb" action="/convenekb" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="convenekb" childof="db-convenekb">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/local/">local</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-local" action="/local" style="mMongoDB Server Information
+{
+    "metrics": {
+        "getLastError": {
+            "wtime": {
+                "num": 12, 
+                "totalMillis": 0
+            }, 
+            "wtimeouts": 0
+        }, 
+        "queryExecutor": {
+            "scanned": 20464414
+        }, 
+        "record": {
+            "moves": 0
+        }, 
+        "repl": {
+            "buffer": {
+                "count": 0, 
+                "sizeBytes": 0, 
+                "maxSizeBytes": 268435456
+            }, 
+            "apply": {
+                "batches": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "oplog": {
+                "insert": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "insertBytes": 0
+            }, 
+            "network": {
+                "bytes": 0, 
+                "readersCreated": 0, 
+                "getmores": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "preload": {
+                "docs": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "indexes": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }
+            }
+        }, 
+        "ttl": {
+            "passes": 1006246, 
+            "deletedDocuments": 0
+        }, 
+        "operation": {
+            "fastmod": 60, 
+            "scanAndOrder": 0, 
+            "idhack": 0
+        }, 
+        "document": {
+            "deleted": 0, 
+            "updated": 62, 
+            "inserted": 34, 
+            "returned": 80953
+        }
+    }, 
+    "process": "mongod", 
+    "pid": 1297, 
+    "connections": {
+        "current": 3, 
+        "available": 9597, 
+        "totalCreated": 15983
+    }, 
+    "locks": {
+        "PLEASE_READ": {
+            "timeAcquiringMicros": {
+                "r": 131669, 
+                "w": 326
+            }, 
+            "timeLockedMicros": {
+                "r": 2306839, 
+                "w": 152574
+            }
+        }, 
+        "DB_H4CK3D": {
+            "timeAcquiringMicros": {
+                "r": 139338, 
+                "w": 67
+            }, 
+            "timeLockedMicros": {
+                "r": 3166322, 
+                "w": 150558
+            }
+        }, 
+        "coop-prod-objects": {
+            "timeAcquiringMicros": {
+                "r": 2837067, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 26382423, 
+                "w": 0
+            }
+        }, 
+        "cool_db": {
+            "timeAcquiringMicros": {
+                "r": 19, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 56, 
+                "w": 0
+            }
+        }, 
+        "READ1": {
+            "timeAcquiringMicros": {
+                "r": 47757, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 432948, 
+                "w": 0
+            }
+        }, 
+        "PLEASE_READ_ME": {
+            "timeAcquiringMicros": {
+                "r": 745494, 
+                "w": 10
+            }, 
+            "timeLockedMicros": {
+                "r": 16522453, 
+                "w": 15599
+            }
+        }, 
+        ".": {
+            "timeAcquiringMicros": {
+                "R": 1084282085, 
+                "W": 170676389
+            }, 
+            "timeLockedMicros": {
+                "R": 1308469877, 
+                "W": 972029565
+            }
+        }, 
+        "README_MISSING_DATABASES": {
+            "timeAcquiringMicros": {
+                "r": 51543, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 445594, 
+                "w": 0
+            }
+        }, 
+        "WARNING": {
+            "timeAcquiringMicros": {
+                "r": 90334, 
+                "w": 209
+            }, 
+            "timeLockedMicros": {
+                "r": 1561703, 
+                "w": 74161
+            }
+        }, 
+        "README": {
+            "timeAcquiringMicros": {
+                "r": 45727, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 433870, 
+                "w": 0
+            }
+        }, 
+        "PWNED_SECURE_YOUR_STUFF_SILLY": {
+            "timeAcquiringMicros": {
+                "r": 55002, 
+                "w": 21
+            }, 
+            "timeLockedMicros": {
+                "r": 567299, 
+                "w": 39028
+            }
+        }, 
+        "automaton-mongo-object-bucket": {
+            "timeAcquiringMicros": {
+                "r": 4406492, 
+                "w": 57
+            }, 
+            "timeLockedMicros": {
+                "r": 85666057, 
+                "w": 22310
+            }
+        }, 
+        "DB_HAS_BEEN_DROPPED": {
+            "timeAcquiringMicros": {
+                "r": 273858, 
+                "w": 17
+            }, 
+            "timeLockedMicros": {
+                "r": 6003080, 
+                "w": 15879
+            }
+        }, 
+        "db": {
+            "timeAcquiringMicros": {
+                "r": 2867453, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 25962234, 
+                "w": 0
+            }
+        }, 
+        "coop-datagrid": {
+            "timeAcquiringMicros": {
+                "r": 2991961, 
+                "w": 303
+            }, 
+            "timeLockedMicros": {
+                "r": 44379877, 
+                "w": 29720
+            }
+        }, 
+        "ReadmePlease": {
+            "timeAcquiringMicros": {
+                "r": 439, 
+                "w": 15
+            }, 
+            "timeLockedMicros": {
+                "r": 9905, 
+                "w": 20622
+            }
+        }, 
+        "CONTACTME": {
+            "timeAcquiringMicros": {
+                "r": 122498, 
+                "w": 22
+            }, 
+            "timeLockedMicros": {
+                "r": 2461235, 
+                "w": 37378
+            }
+        }, 
+        "admin": {
+            "timeAcquiringMicros": {
+                "r": 673234, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 27982006, 
+                "w": 0
+            }
+        }, 
+        "ENCRYPTED": {
+            "timeAcquiringMicros": {
+                "r": 51155, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 487989, 
+                "w": 0
+            }
+        }, 
+        "local": {
+            "timeAcquiringMicros": {
+                "r": 8831512, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 91506473, 
+                "w": 0
+            }
+        }, 
+        "WARNING_ALERT": {
+            "timeAcquiringMicros": {
+                "r": 14930, 
+                "w": 14
+            }, 
+            "timeLockedMicros": {
+                "r": 352666, 
+                "w": 32960
+            }
+        }, 
+        "coop-test-objects": {
+            "timeAcquiringMicros": {
+                "r": 4407585, 
+                "w": 232
+            }, 
+            "timeLockedMicros": {
+                "r": 41430751, 
+                "w": 18004
+            }
+        }, 
+        "README_YOU_DB_IS_INSECURE": {
+            "timeAcquiringMicros": {
+                "r": 49812, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 442597, 
+                "w": 0
+            }
+        }
+    }, 
+    "cursors": {
+        "clientCursors_size": 0, 
+        "timedOut": 21, 
+        "totalOpen": 0
+    }, 
+    "globalLock": {
+        "totalTime": 60375492025000, 
+        "lockTime": 972029565, 
+        "currentQueue": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }, 
+        "activeClients": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }
+    }, 
+    "extra_info": {
+        "note": "fields vary by platform", 
+        "page_faults": 428, 
+        "heap_usage_bytes": 92647320
+    }, 
+    "uptime": 60375492.0, 
+    "network": {
+        "numRequests": 181116493, 
+        "bytesOut": 23862944608.0, 
+        "bytesIn": 10505554106.0
+    }, 
+    "uptimeMillis": 60375492025, 
+    "recordStats": {
+        "DB_HAS_BEEN_DROPPED": {
+            "pageFaultExceptionsThrown": 0, 
+            "accessesNotInMemory": 0
+        }, 
+        "pageFaultExceptionsThrown": 8, 
+        "accessesNotInMemory": 31
+    }, 
+    "version": "2.4.9", 
+    "dur": {
+        "compression": 0.0, 
+        "journaledMB": 0.0, 
+        "commits": 30, 
+        "writeToDataFilesMB": 0.0, 
+        "commitsInWriteLock": 0, 
+        "earlyCommits": 0, 
+        "timeMs": {
+            "writeToJournal": 0, 
+            "dt": 3071, 
+            "remapPrivateView": 0, 
+            "prepLogBuffer": 0, 
+            "writeToDataFiles": 0
+        }
+    }, 
+    "mem": {
+        "resident": 117, 
+        "supported": true, 
+        "virtual": 3307, 
+        "mappedWithJournal": 160, 
+        "mapped": 80, 
+        "bits": 64
+    }, 
+    "opcountersRepl": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 0, 
+        "query": 0, 
+        "delete": 0
+    }, 
+    "indexCounters": {
+        "missRatio": 0.0, 
+        "resets": 0, 
+        "hits": 86, 
+        "misses": 0, 
+        "accesses": 86
+    }, 
+    "uptimeEstimate": 59671328.0, 
+    "host": "ip-10-82-250-9", 
+    "writeBacksQueued": false, 
+    "localTime": "2017-06-17T08:31:12.236000", 
+    "backgroundFlushing": {
+        "last_finished": "2017-06-17T08:31:06.323000", 
+        "last_ms": 0, 
+        "flushes": 1006256, 
+        "average_ms": 0.08834531172981826, 
+        "total_ms": 88898
+    }, 
+    "opcounters": {
+        "getmore": 4, 
+        "insert": 34, 
+        "update": 63, 
+        "command": 181105318, 
+        "query": 5231750, 
+        "delete": 0
+    }, 
+    "ok": 1.0, 
+    "asserts": {
+        "msg": 0, 
+        "rollovers": 0, 
+        "regular": 0, 
+        "warning": 3, 
+        "user": 15
+    }
+},
+{
+    "ok": 1.0, 
+    "bits": 64, 
+    "javascriptEngine": "V8", 
+    "version": "2.4.9", 
+    "gitVersion": "52fe0d21959e32a5bdbecdc62057db386e4e029c", 
+    "versionArray": [
+        2, 
+        4, 
+        9, 
+        0
+    ], 
+    "debug": false, 
+    "compilerFlags": "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -Werror -pipe -fno-builtin-memcmp -O3", 
+    "maxBsonObjectSize": 16777216, 
+    "sysInfo": "Linux ip-10-2-29-40 2.6.21.7-2.ec2.v1.2.fc8xen #1 SMP Fri Nov 20 17:48:28 EST 2009 x86_64 BOOST_LIB_VERSION=1_49", 
+    "loaderFlags": "-fPIC -pthread -rdynamic", 
+    "allocator": "tcmalloc"
+},
+{
+    "totalSize": 218103808.0, 
+    "ok": 1.0, 
+    "databases": [
+        {
+            "sizeOnDisk": 218103808.0, 
+            "collections": [
+                "system.indexes", 
+                "DB_HAS_BEEN_DROPPED"
+            ], 
+            "name": "DB_HAS_BEEN_DROPPED", 
+            "empty": false
+        }
+    ]
+},
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 4317
+ETag: W/"10dd-YnpxtLgc947r7qu5rrVSqA"
+set-cookie: mongo-express=s%3ANBwC0UU3MuCKf9TUpiWw8PKzZbKgIooA.sgIyye2Ss0gYCeo0ayhEtb22cVD2oTkzD9c%2B8GG6BBI; Path=/; HttpOnly
+Date: Sat, 17 Jun 2017 07:40:46 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet" />
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  <link href="/stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
+  <script src="/javascripts/jquery-1.7.2.min.js"></script>
+  <script src="/javascripts/bootstrap.min.js"></script>
+
+  
+</head>
+
+<body>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="">Mongo Express</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="">Home</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          
+          <li class="nav-header" onclick="$('#toggle_REQUEST_YOUR_DATA').collapse('toggle')">
+            REQUEST_YOUR_DATA
+            <i class="icon-chevron-down pull-right"></i>
+          </li>
+          <li><a href="/db/REQUEST_YOUR_DATA"><i class="icon-folder-open"></i> View Database</a></li>
+            <ul class="unstyled collapse nav nav-list" id="toggle_REQUEST_YOUR_DATA">
+            
+            
+            
+            <li><a href="/db/REQUEST_YOUR_DATA/REQUEST_YOUR_DATA"><i class="icon-list-alt"></i> REQUEST_YOUR_DATA</a></li>
+                
+              
+            
+            </ul>
+          <li class="divider"></li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <div class="span9">
+      <ul class="breadcrumb">
+      
+        <li class="active">
+          Home
+        </li>
+      
+      </ul>
+
+      <div class="page-header">
+      <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+      
+
+
+
+<h2>Server Status</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <td class="span2"><strong>Hostname</strong></td>
+    <td class="span3" id="dbHost">035fbb55247b</td>
+    <td class="span2"><strong>MongoDB Version</strong></td>
+    <td class="span3" id="dbVersion">3.2.0</td>
+  </tr>
+  <tr>
+    <td><strong>Uptime</strong></td>
+    <td>11130877 seconds  (128 days) </td>
+    <td><strong>Server Time</strong></td>
+    <td>Sat, 17 Jun 2017 07:40:46 GMT</td>
+  </tr>
+  <tr><td colspan="4">&nbsp;</td></tr>
+  <tr>
+    <td><strong>Current Connections</strong></td>
+    <td>5</td>
+    <td><strong>AvaiHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 8261
+ETag: W/"2045-plRgV1UpPieakvEEGN/oKQ"
+set-cookie: mongo-express=s%3Akb6Zh8Mrwpt2jrg6okni45gJAeSULRcU.v4HPqP3rI%2FD0lNvOW1f%2FaGR%2BsgxkxIT8G%2BhkF3OZ6bQ; Path=/; HttpOnly
+Date: Fri, 16 Jun 2017 13:35:04 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/local/">local</a></li>
+      
+      <li><a href="/db/papioniha/">papioniha</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/local/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/local/">local</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-local" action="/local" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="local" childof="db-local">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/papioniha/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/papioniha/">papioniha</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-papioniha" action="/papioniha" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="papioniha" childof="db-papioniha">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+</table>
+</div>
+  </div>
+
+<div id="confirm-deletion" class="modal fade" role="dialog" aria-labelledby="confirmDeletionLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-titMongoDB Server Information
+{
+    "metrics": {
+        "getLastError": {
+            "wtime": {
+                "num": 0, 
+                "totalMillis": 0
+            }, 
+            "wtimeouts": 0
+        }, 
+        "storage": {
+            "freelist": {
+                "search": {
+                    "requests": 268, 
+                    "scanned": 493, 
+                    "bucketExhausted": 0
+                }
+            }
+        }, 
+        "queryExecutor": {
+            "scanned": 0, 
+            "scannedObjects": 0
+        }, 
+        "cursor": {
+            "timedOut": 4, 
+            "open": {
+                "pinned": 0, 
+                "total": 0, 
+                "noTimeout": 20
+            }
+        }, 
+        "record": {
+            "moves": 0
+        }, 
+        "repl": {
+            "buffer": {
+                "count": 0, 
+                "sizeBytes": 0, 
+                "maxSizeBytes": 268435456
+            }, 
+            "apply": {
+                "batches": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "preload": {
+                "docs": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "indexes": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }
+            }, 
+            "network": {
+                "bytes": 0, 
+                "readersCreated": 0, 
+                "getmores": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }
+        }, 
+        "ttl": {
+            "passes": 1258156, 
+            "deletedDocuments": 0
+        }, 
+        "operation": {
+            "fastmod": 0, 
+            "scanAndOrder": 0, 
+            "idhack": 0
+        }, 
+        "document": {
+            "deleted": 0, 
+            "updated": 0, 
+            "inserted": 33, 
+            "returned": 5418
+        }
+    }, 
+    "process": "mongod", 
+    "pid": 498, 
+    "connections": {
+        "current": 1, 
+        "available": 51199, 
+        "totalCreated": 5771
+    }, 
+    "locks": {
+        "shop": {
+            "timeAcquiringMicros": {
+                "r": 153655, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 1032118, 
+                "w": 0
+            }
+        }, 
+        "PLEASE_READ": {
+            "timeAcquiringMicros": {
+                "r": 2964785, 
+                "w": 31
+            }, 
+            "timeLockedMicros": {
+                "r": 7140675, 
+                "w": 9816580
+            }
+        }, 
+        "DB_H4CK3D": {
+            "timeAcquiringMicros": {
+                "r": 633000, 
+                "w": 15
+            }, 
+            "timeLockedMicros": {
+                "r": 1687117, 
+                "w": 4068947
+            }
+        }, 
+        "site": {
+            "timeAcquiringMicros": {
+                "r": 103139653, 
+                "w": 96
+            }, 
+            "timeLockedMicros": {
+                "r": 237393346, 
+                "w": 47402
+            }
+        }, 
+        "cool_db": {
+            "timeAcquiringMicros": {
+                "r": 11, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 32, 
+                "w": 0
+            }
+        }, 
+        "READ1": {
+            "timeAcquiringMicros": {
+                "r": 24773, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 147679, 
+                "w": 0
+            }
+        }, 
+        "mongoose": {
+            "timeAcquiringMicros": {
+                "r": 25242287, 
+                "w": 1
+            }, 
+            "timeLockedMicros": {
+                "r": 67849706, 
+                "w": 14
+            }
+        }, 
+        "PLEASE_READ_ME": {
+            "timeAcquiringMicros": {
+                "r": 2720151, 
+                "w": 17
+            }, 
+            "timeLockedMicros": {
+                "r": 4423843, 
+                "w": 6876220
+            }
+        }, 
+        "Mongodb": {
+            "timeAcquiringMicros": {
+                "r": 2496846, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 23811201, 
+                "w": 0
+            }
+        }, 
+        ".": {
+            "timeAcquiringMicros": {
+                "R": 417028353, 
+                "W": 94458797
+            }, 
+            "timeLockedMicros": {
+                "R": 555882300, 
+                "W": 398824964
+            }
+        }, 
+        "README_MISSING_DATABASES": {
+            "timeAcquiringMicros": {
+                "r": 25976, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 146653, 
+                "w": 0
+            }
+        }, 
+        "WARNING": {
+            "timeAcquiringMicros": {
+                "r": 621410, 
+                "w": 21
+            }, 
+            "timeLockedMicros": {
+                "r": 1717057, 
+                "w": 5799136
+            }
+        }, 
+        "ReadmePlease": {
+            "timeAcquiringMicros": {
+                "r": 95550, 
+                "w": 5
+            }, 
+            "timeLockedMicros": {
+                "r": 17382, 
+                "w": 1395019
+            }
+        }, 
+        "PWNED_SECURE_YOUR_STUFF_SILLY": {
+            "timeAcquiringMicros": {
+                "r": 27243, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 155378, 
+                "w": 0
+            }
+        }, 
+        "PLEASEREAD": {
+            "timeAcquiringMicros": {
+                "r": 12814665, 
+                "w": 8
+            }, 
+            "timeLockedMicros": {
+                "r": 33951229, 
+                "w": 3932488
+            }
+        }, 
+        "db": {
+            "timeAcquiringMicros": {
+                "r": 1646389, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 10301012, 
+                "w": 0
+            }
+        }, 
+        "auth": {
+            "timeAcquiringMicros": {
+                "r": 31747162, 
+                "w": 8
+            }, 
+            "timeLockedMicros": {
+                "r": 72245064, 
+                "w": 49
+            }
+        }, 
+        "README": {
+            "timeAcquiringMicros": {
+                "r": 26833, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 144702, 
+                "w": 0
+            }
+        }, 
+        "CONTACTME": {
+            "timeAcquiringMicros": {
+                "r": 2568738, 
+                "w": 18
+            }, 
+            "timeLockedMicros": {
+                "r": 4113492, 
+                "w": 4938520
+            }
+        }, 
+        "admin": {
+            "timeAcquiringMicros": {
+                "r": 57465209, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 202385825, 
+                "w": 0
+            }
+        }, 
+        "ENCRYPTED": {
+            "timeAcquiringMicros": {
+                "r": 27350, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 156411, 
+                "w": 0
+            }
+        }, 
+        "local": {
+            "timeAcquiringMicros": {
+                "r": 26101600, 
+                "w": 2
+            }, 
+            "timeLockedMicros": {
+                "r": 121570670, 
+                "w": 13
+            }
+        }, 
+        "WE_HAVE_YOUR_DATA": {
+            "timeAcquiringMicros": {
+                "r": 4430426, 
+                "w": 5
+            }, 
+            "timeLockedMicros": {
+                "r": 10803120, 
+                "w": 1118172
+            }
+        }, 
+        "README_YOU_DB_IS_INSECURE": {
+            "timeAcquiringMicros": {
+                "r": 26257, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 150333, 
+                "w": 0
+            }
+        }
+    }, 
+    "cursors": {
+        "clientCursors_size": 0, 
+        "pinned": 0, 
+        "totalNoTimeout": 20, 
+        "timedOut": 4, 
+        "note": "deprecated, use server status metrics", 
+        "totalOpen": 0
+    }, 
+    "globalLock": {
+        "totalTime": 75490448252000, 
+        "lockTime": 398824964, 
+        "currentQueue": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }, 
+        "activeClients": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }
+    }, 
+    "extra_info": {
+        "note": "fields vary by platform", 
+        "page_faults": 348, 
+        "heap_usage_bytes": 69827040
+    }, 
+    "uptime": 75490449.0, 
+    "network": {
+        "numRequests": 74364, 
+        "bytesOut": 20141297, 
+        "bytesIn": 4594079
+    }, 
+    "uptimeMillis": 75490448216, 
+    "recordStats": {
+        "WE_HAVE_YOUR_DATA": {
+            "pageFaultExceptionsThrown": 0, 
+            "accessesNotInMemory": 0
+        }, 
+        "pageFaultExceptionsThrown": 0, 
+        "accessesNotInMemory": 0
+    }, 
+    "version": "2.6.1", 
+    "dur": {
+        "compression": 0.0, 
+        "journaledMB": 0.0, 
+        "commits": 30, 
+        "writeToDataFilesMB": 0.0, 
+        "commitsInWriteLock": 0, 
+        "earlyCommits": 0, 
+        "timeMs": {
+            "writeToJournal": 0, 
+            "dt": 3072, 
+            "remapPrivateView": 0, 
+            "prepLogBuffer": 0, 
+            "writeToDataFiles": 0
+        }
+    }, 
+    "mem": {
+        "resident": 59, 
+        "supported": true, 
+        "virtual": 3700, 
+        "mappedWithJournal": 160, 
+        "mapped": 80, 
+        "bits": 64
+    }, 
+    "opcountersRepl": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 0, 
+        "query": 0, 
+        "delete": 0
+    }, 
+    "indexCounters": {
+        "missRatio": 0.0, 
+        "resets": 0, 
+        "hits": 61, 
+        "misses": 0, 
+        "accesses": 61
+    }, 
+    "uptimeEstimate": 74668979.0, 
+    "host": "mongo", 
+    "writeBacksQueued": false, 
+    "localTime": "2017-06-16T11:33:17.688000", 
+    "backgroundFlushing": {
+        "last_finished": "2017-06-16T11:32:58.503000", 
+        "last_ms": 0, 
+        "flushes": 1258181, 
+        "average_ms": 0.0188271798731661, 
+        "total_ms": 23688
+    }, 
+    "opcounters": {
+        "getmore": 0, 
+        "insert": 33, 
+        "update": 0, 
+        "command": 70822, 
+        "query": 7472612, 
+        "delete": 1
+    }, 
+    "ok": 1.0, 
+    "asserts": {
+        "msg": 0, 
+        "rollovers": 0, 
+        "regular": 0, 
+        "warning": 0, 
+        "user": 138
+    }
+},
+{
+    "ok": 1.0, 
+    "OpenSSLVersion": "", 
+    "bits": 64, 
+    "javascriptEngine": "V8", 
+    "version": "2.6.1", 
+    "allocator": "tcmalloc", 
+    "versionArray": [
+        2, 
+        6, 
+        1, 
+        0
+    ], 
+    "debug": false, 
+    "compilerFlags": "-Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -Werror -pipe -O3 -Wno-unused-function -Wno-deprecated-declarations -fno-builtin-memcmp", 
+    "maxBsonObjectSize": 16777216, 
+    "sysInfo": "Linux build14.nj1.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49", 
+    "loaderFlags": "-fPIC -pthread -Wl,-z,now -rdynamic", 
+    "gitVersion": "4b95b086d2374bdcfcdf2249272fb552c9c726e8"
+},
+{
+    "totalSize": 83886080.0, 
+    "ok": 1.0, 
+    "databases": [
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "WE_HAVE_YOUR_DATA", 
+                "system.indexes"
+            ], 
+            "name": "WE_HAVE_YOUR_DATA", 
+            "empty": false
+        }
+    ]
+},
+HTTP/1.1 200 OK
+Date: Fri, 16 Jun 2017 10:02:41 GMT
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Last-Modified: Fri, 16 Jun 2017 10:02:41 +0000
+Strict-Transport-Security: max-age=31536000
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com js.intercomcdn.com *.intercom.io ; frame-src https://accounts.google.com; style-src 'unsafe-inline' 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * self data:; connect-src 'self' metabase.us10.list-manage.com *.intercom.io wss://*.intercom.io ; 
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Length: 10002
+Server: Jetty(9.2.z-SNAPSHOT)
+
+<!DOCTYPE html>
+<html lang="en" ng-app="metabase" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <title>Metabase</title>
+
+        <script type="text/javascript">
+         window.MetabaseBootstrap = {"engines":{"postgres":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":5432},{"name":"dbname","display-name":"Database name","placeholder":"birds_of_the_word","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?","required":true},{"name":"password","display-name":"Database password","type":"password","placeholder":"*******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"PostgreSQL","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions","set-timezone"]},"mongo":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":27017},{"name":"dbname","display-name":"Database name","placeholder":"carrierPigeonDeliveries","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?"},{"name":"pass","display-name":"Database password","type":"password","placeholder":"******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"MongoDB","features":["nested-fields","dynamic-schema"]},"bigquery":{"details-fields":[{"name":"project-id","display-name":"Project ID","placeholder":"praxis-beacon-120871","required":true},{"name":"dataset-id","display-name":"Dataset ID","placeholder":"toucanSightings","required":true},{"name":"client-id","display-name":"Client ID","placeholder":"1201327674725-y6ferb0feo1hfssr7t40o4aikqll46d4.apps.googleusercontent.com","required":true},{"name":"client-secret","display-name":"Client Secret","placeholder":"dJNi4utWgMzyIFo2JbnsK6Np","required":true},{"name":"auth-code","display-name":"Auth Code","placeholder":"4/HSk-KtxkSzTt61j5zcbee2Rmm5JHkRFbL5gD5lgkXek","required":true}],"driver-name":"BigQuery","features":["foreign-keys"]},"druid":{"details-fields":[{"name":"host","display-name":"Host","default":"http://localhost"},{"name":"port","display-name":"Broker node port","type":"integer","default":8082}],"driver-name":"Druid","features":["set-timezone"]},"crate":{"details-fields":[{"name":"hosts","display-name":"Hosts","default":"//localhost:4300"}],"driver-name":"Crate","features":["standard-deviation-aggregations","native-parameters","expressions"]},"redshift":{"details-fields":[{"name":"host","display-name":"Host","placeholder":"my-cluster-name.abcd1234.us-east-1.redshift.amazonaws.com","required":true},{"name":"port","display-name":"Port","type":"integer","default":5439},{"name":"db","display-name":"Database name","placeholder":"toucan_sightings","required":true},{"name":"user","display-name":"Master username","placeholder":"cam","required":true},{"name":"password","display-name":"Master user password","type":"password","placeholder":"*******","required":true}],"driver-name":"Amazon Redshift","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"h2":{"details-fields":[{"name":"db","display-name":"Connection String","placeholder":"file:/Users/camsaul/bird_sightings/toucans;AUTO_SERVER=TRUE","required":true}],"driver-name":"H2","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"sqlite":{"details-fields":[{"name":"db","display-name":"Filename","placeholder":"/home/camsaul/toucan_sightings.sqlite ??","reHTTP/1.1 200 OK
+Date: Fri, 16 Jun 2017 06:03:18 GMT
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Last-Modified: Fri, 16 Jun 2017 06:03:18 +0000
+Strict-Transport-Security: max-age=31536000
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com js.intercomcdn.com *.intercom.io ; frame-src https://accounts.google.com; style-src 'unsafe-inline' 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * self data:; connect-src 'self' metabase.us10.list-manage.com *.intercom.io wss://*.intercom.io ; 
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Length: 10124
+Server: Jetty(9.2.z-SNAPSHOT)
+
+<!DOCTYPE html>
+<html lang="en" ng-app="metabase" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <title>easyDW</title>
+
+        <script type="text/javascript">
+         window.MetabaseBootstrap = {"engines":{"postgres":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":5432},{"name":"dbname","display-name":"Database name","placeholder":"birds_of_the_word","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?","required":true},{"name":"password","display-name":"Database password","type":"password","placeholder":"*******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"PostgreSQL","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions","set-timezone"]},"mongo":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":27017},{"name":"dbname","display-name":"Database name","placeholder":"carrierPigeonDeliveries","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?"},{"name":"pass","display-name":"Database password","type":"password","placeholder":"******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"MongoDB","features":["nested-fields","dynamic-schema"]},"bigquery":{"details-fields":[{"name":"project-id","display-name":"Project ID","placeholder":"praxis-beacon-120871","required":true},{"name":"dataset-id","display-name":"Dataset ID","placeholder":"toucanSightings","required":true},{"name":"client-id","display-name":"Client ID","placeholder":"1201327674725-y6ferb0feo1hfssr7t40o4aikqll46d4.apps.googleusercontent.com","required":true},{"name":"client-secret","display-name":"Client Secret","placeholder":"dJNi4utWgMzyIFo2JbnsK6Np","required":true},{"name":"auth-code","display-name":"Auth Code","placeholder":"4/HSk-KtxkSzTt61j5zcbee2Rmm5JHkRFbL5gD5lgkXek","required":true}],"driver-name":"BigQuery","features":["foreign-keys"]},"druid":{"details-fields":[{"name":"host","display-name":"Host","default":"http://localhost"},{"name":"port","display-name":"Broker node port","type":"integer","default":8082}],"driver-name":"Druid","features":["set-timezone"]},"crate":{"details-fields":[{"name":"hosts","display-name":"Hosts","default":"//localhost:4300"}],"driver-name":"Crate","features":["standard-deviation-aggregations","native-parameters","expressions"]},"redshift":{"details-fields":[{"name":"host","display-name":"Host","placeholder":"my-cluster-name.abcd1234.us-east-1.redshift.amazonaws.com","required":true},{"name":"port","display-name":"Port","type":"integer","default":5439},{"name":"db","display-name":"Database name","placeholder":"toucan_sightings","required":true},{"name":"user","display-name":"Master username","placeholder":"cam","required":true},{"name":"password","display-name":"Master user password","type":"password","placeholder":"*******","required":true}],"driver-name":"Amazon Redshift","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"h2":{"details-fields":[{"name":"db","display-name":"Connection String","placeholder":"file:/Users/camsaul/bird_sightings/toucans;AUTO_SERVER=TRUE","required":true}],"driver-name":"H2","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"sqlite":{"details-fields":[{"name":"db","display-name":"Filename","placeholder":"/home/camsaul/toucan_sightings.sqliHTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 10560
+ETag: W/"2940-eZ11BEqES49xOIwhImX3/Q"
+set-cookie: mongo-express=s%3Ao_GvRRUdijaxgHFKs27W1gNqWAXFa7Tp.DH7KQC2Xsf8%2FU2q1E%2F9YxBgMzbBEjf6DMdo2Mt0Mebc; Path=/; HttpOnly
+Date: Fri, 16 Jun 2017 01:17:05 GMT
+Connection: keep-alive
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <title>Home - Mongo Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/public/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/public/css/style.css" rel="stylesheet" />
+
+  <link rel="prefetch" href="/public/img/gears.gif">
+
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+    .sidebar-nav {
+      padding: 9px 0;
+    }
+    .sidebar-nav a {
+      display: inline-block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .tooltip-inner {
+      max-width: 500px;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="logo-nav">
+        <a href="/">
+          <img src="/public/img/mongo-express-logo.png" />
+        </a>
+      </div>
+      <a class="navbar-brand" href="">Mongo Express</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Database<span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      
+      <li><a href="/db/ChessRebate/">ChessRebate</a></li>
+      
+      <li><a href="/db/ChessRecharge/">ChessRecharge</a></li>
+      
+      <li><a href="/db/ChessSVIP/">ChessSVIP</a></li>
+      
+      <li><a href="/db/admin/">admin</a></li>
+      
+      <li><a href="/db/local/">local</a></li>
+      
+    </ul>
+  </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header main-title">
+        <h1 id="pageTitle">Mongo Express</h1>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div style="display: inline-block;">
+      <h4 style="font-weight: bold;">Databases</h4>
+    </div>
+    
+    <form class="form-inline" method="POST" style="float:right;">
+      <div class="input-group">
+        <input class="form-control" type="text" id="database" name="database" placeholder="Database Name" title="Database Name">
+        <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary pull-right">
+        <span class="glyphicon glyphicon-plus"></span>
+        Create Database
+      </button>
+        </span>
+      </div>
+    </form>
+    
+    </div>
+  <div class="panel-body no-padding">
+<table class="table table-bordered table-striped table-condensed no-margin">
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/ChessRebate/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/ChessRebate/">ChessRebate</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-ChessRebate" action="/ChessRebate" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="ChessRebate" childof="db-ChessRebate">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/ChessRecharge/" class="btn btn-success btn-block" >
+        <span class="glyphicon glyphicon-eye-open"></span><br>View
+      </a>
+    </td>
+    <td><h3><a href="/db/ChessRecharge/">ChessRecharge</a></h3></td>
+    
+    <td class="col-md-2">
+      <form method="POST" id="db-ChessRecharge" action="/ChessRecharge" style="margin: 0px;">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="hidden"></button>
+      </form>
+      <button class="btn btn-danger btn-block deleteButton" database-name="ChessRecharge" childof="db-ChessRecharge">
+        <span class="glyphicon glyphicon-trash"></span><br>Del
+      </button>
+    </td>
+    
+  </tr>
+  
+  <tr>
+    <td class="col-md-2">
+      <a href="/db/ChessSVIP/" class="btn btn-success btn-block" >
+        <span class="glyp@RSYNCD: 31.0
+etc            	etc
+home           	homes
+mongo          	mongo db
+@RSYNCD: EXIT
+HTTP/1.1 200 OK
+Date: Thu, 15 Jun 2017 16:21:36 GMT
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Last-Modified: Thu, 15 Jun 2017 16:21:36 +0000
+Strict-Transport-Security: max-age=31536000
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com js.intercomcdn.com *.intercom.io ; frame-src https://accounts.google.com; style-src 'unsafe-inline' 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * self data:; connect-src 'self' metabase.us10.list-manage.com *.intercom.io wss://*.intercom.io ; 
+Content-Type: text/html; charset=ISO-8859-1
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Length: 9824
+Server: Jetty(9.2.z-SNAPSHOT)
+
+<!DOCTYPE html>
+<html lang="en" ng-app="metabase" class="no-js">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <title>TechBrain???????--?????????</title>
+
+        <script type="text/javascript">
+         window.MetabaseBootstrap = {"engines":{"postgres":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":5432},{"name":"dbname","display-name":"Database name","placeholder":"birds_of_the_word","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?","required":true},{"name":"password","display-name":"Database password","type":"password","placeholder":"*******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"PostgreSQL","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions","set-timezone"]},"mongo":{"details-fields":[{"name":"host","display-name":"Host","default":"localhost"},{"name":"port","display-name":"Port","type":"integer","default":27017},{"name":"dbname","display-name":"Database name","placeholder":"carrierPigeonDeliveries","required":true},{"name":"user","display-name":"Database username","placeholder":"What username do you use to login to the database?"},{"name":"pass","display-name":"Database password","type":"password","placeholder":"******"},{"name":"ssl","display-name":"Use a secure connection (SSL)?","type":"boolean","default":false}],"driver-name":"MongoDB","features":["nested-fields","dynamic-schema"]},"bigquery":{"details-fields":[{"name":"project-id","display-name":"Project ID","placeholder":"praxis-beacon-120871","required":true},{"name":"dataset-id","display-name":"Dataset ID","placeholder":"toucanSightings","required":true},{"name":"client-id","display-name":"Client ID","placeholder":"1201327674725-y6ferb0feo1hfssr7t40o4aikqll46d4.apps.googleusercontent.com","required":true},{"name":"client-secret","display-name":"Client Secret","placeholder":"dJNi4utWgMzyIFo2JbnsK6Np","required":true},{"name":"auth-code","display-name":"Auth Code","placeholder":"4/HSk-KtxkSzTt61j5zcbee2Rmm5JHkRFbL5gD5lgkXek","required":true}],"driver-name":"BigQuery","features":["foreign-keys"]},"druid":{"details-fields":[{"name":"host","display-name":"Host","default":"http://localhost"},{"name":"port","display-name":"Broker node port","type":"integer","default":8082}],"driver-name":"Druid","features":["set-timezone"]},"crate":{"details-fields":[{"name":"hosts","display-name":"Hosts","default":"//localhost:4300"}],"driver-name":"Crate","features":["standard-deviation-aggregations","native-parameters","expressions"]},"redshift":{"details-fields":[{"name":"host","display-name":"Host","placeholder":"my-cluster-name.abcd1234.us-east-1.redshift.amazonaws.com","required":true},{"name":"port","display-name":"Port","type":"integer","default":5439},{"name":"db","display-name":"Database name","placeholder":"toucan_sightings","required":true},{"name":"user","display-name":"Database username","placeholder":"cam","required":true},{"name":"password","display-name":"Database user password","type":"password","placeholder":"*******","required":true}],"driver-name":"Amazon Redshift","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"h2":{"details-fields":[{"name":"db","display-name":"Connection String","placeholder":"file:/Users/camsaul/bird_sightings/toucans;AUTO_SERVER=TRUE","required":true}],"driver-name":"H2","features":["standard-deviation-aggregations","foreign-keys","native-parameters","expressions"]},"sqlite":{"details-fields":[{"name":"db","display-name":"Filename","placeholder":"/home/camsaul/toucan_siMongoDB Server Information
+{
+    "metrics": {
+        "getLastError": {
+            "wtime": {
+                "num": 0, 
+                "totalMillis": 0
+            }, 
+            "wtimeouts": 0
+        }, 
+        "queryExecutor": {
+            "scanned": 6292972543
+        }, 
+        "record": {
+            "moves": 0
+        }, 
+        "repl": {
+            "buffer": {
+                "count": 0, 
+                "sizeBytes": 0, 
+                "maxSizeBytes": 268435456
+            }, 
+            "apply": {
+                "batches": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "oplog": {
+                "insert": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "insertBytes": 0
+            }, 
+            "network": {
+                "bytes": 0, 
+                "readersCreated": 0, 
+                "getmores": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "ops": 0
+            }, 
+            "preload": {
+                "docs": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }, 
+                "indexes": {
+                    "num": 0, 
+                    "totalMillis": 0
+                }
+            }
+        }, 
+        "ttl": {
+            "passes": 79687, 
+            "deletedDocuments": 0
+        }, 
+        "operation": {
+            "fastmod": 0, 
+            "scanAndOrder": 0, 
+            "idhack": 79927
+        }, 
+        "document": {
+            "deleted": 85, 
+            "updated": 79110, 
+            "inserted": 704, 
+            "returned": 27213391
+        }
+    }, 
+    "process": "mongod", 
+    "pid": 10546, 
+    "connections": {
+        "current": 1, 
+        "available": 19999, 
+        "totalCreated": 1684
+    }, 
+    "locks": {
+        "admin": {
+            "timeAcquiringMicros": {}, 
+            "timeLockedMicros": {}
+        }, 
+        "imes": {
+            "timeAcquiringMicros": {
+                "r": 95803500, 
+                "w": 314488
+            }, 
+            "timeLockedMicros": {
+                "r": 5321267163, 
+                "w": 4074836
+            }
+        }, 
+        "local": {
+            "timeAcquiringMicros": {
+                "r": 611334, 
+                "w": 0
+            }, 
+            "timeLockedMicros": {
+                "r": 6563628, 
+                "w": 0
+            }
+        }, 
+        ".": {
+            "timeAcquiringMicros": {
+                "R": 57927167, 
+                "W": 10288724
+            }, 
+            "timeLockedMicros": {
+                "R": 96901261, 
+                "W": 108246137
+            }
+        }
+    }, 
+    "cursors": {
+        "clientCursors_size": 0, 
+        "timedOut": 0, 
+        "totalOpen": 0
+    }, 
+    "globalLock": {
+        "totalTime": 4781263858000, 
+        "lockTime": 108246137, 
+        "currentQueue": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }, 
+        "activeClients": {
+            "total": 0, 
+            "writers": 0, 
+            "readers": 0
+        }
+    }, 
+    "extra_info": {
+        "note": "fields vary by platform", 
+        "page_faults": 18, 
+        "heap_usage_bytes": 64803200
+    }, 
+    "uptime": 4781264.0, 
+    "network": {
+        "numRequests": 55188705, 
+        "bytesOut": 10542615925.0, 
+        "bytesIn": 6386326087.0
+    }, 
+    "uptimeMillis": 4781263858, 
+    "recordStats": {
+        "imes": {
+            "pageFaultExceptionsThrown": 0, 
+            "accessesNotInMemory": 0
+        }, 
+        "local": {
+            "pageFaultExceptionsThrown": 0, 
+            "accessesNotInMemory": 0
+        }, 
+        "pageFaultExceptionsThrown": 0, 
+        "accessesNotInMemory": 0
+    }, 
+    "version": "2.4.9", 
+    "dur": {
+        "compression": 0.0, 
+        "journaledMB": 0.0, 
+        "commits": 30, 
+        "writeToDataFilesMB": 0.0, 
+        "commitsInWriteLock": 0, 
+        "earlyCommits": 0, 
+        "timeMs": {
+            "writeToJournal": 0, 
+            "dt": 3067, 
+            "remapPrivateView": 0, 
+            "prepLogBuffer": 0, 
+            "writeToDataFiles": 0
+        }
+    }, 
+    "mem": {
+        "resident": 48, 
+        "supported": true, 
+        "virtual": 543, 
+        "mappedWithJournal": 320, 
+        "mapped": 160, 
+        "bits": 64
+    }, 
+    "opcountersRepl": {
+        "getmore": 0, 
+        "insert": 0, 
+        "update": 0, 
+        "command": 0, 
+        "query": 0, 
+        "delete": 0
+    }, 
+    "indexCounters": {
+        "missRatio": 0.0, 
+        "resets": 0, 
+        "hits": 81872, 
+        "misses": 0, 
+        "accesses": 81872
+    }, 
+    "uptimeEstimate": 4737382.0, 
+    "host": "imes-db-mongo", 
+    "writeBacksQueued": false, 
+    "localTime": "2017-06-15T13:54:34.218000", 
+    "backgroundFlushing": {
+        "last_finished": "2017-06-15T13:53:57.104000", 
+        "last_ms": 0, 
+        "flushes": 79687, 
+        "average_ms": 1.0433571347898654, 
+        "total_ms": 83142
+    }, 
+    "opcounters": {
+        "getmore": 0, 
+        "insert": 704, 
+        "update": 79110, 
+        "command": 763470, 
+        "query": 54499182, 
+        "delete": 87
+    }, 
+    "ok": 1.0, 
+    "asserts": {
+        "msg": 0, 
+        "rollovers": 0, 
+        "regular": 0, 
+        "warning": 0, 
+        "user": 0
+    }
+},
+{
+    "ok": 1.0, 
+    "bits": 64, 
+    "javascriptEngine": "V8", 
+    "version": "2.4.9", 
+    "gitVersion": "nogitversion", 
+    "versionArray": [
+        2, 
+        4, 
+        9, 
+        0
+    ], 
+    "debug": false, 
+    "compilerFlags": "-Wno-unused-local-typedefs -Wnon-virtual-dtor -Woverloaded-virtual -fPIC -fno-strict-aliasing -ggdb -pthread -Wall -Wsign-compare -Wno-unknown-pragmas -Winvalid-pch -Werror -pipe -fno-builtin-memcmp -O3", 
+    "maxBsonObjectSize": 16777216, 
+    "sysInfo": "Linux orlo 3.2.0-58-generic #88-Ubuntu SMP Tue Dec 3 17:37:58 UTC 2013 x86_64 BOOST_LIB_VERSION=1_54", 
+    "loaderFlags": "-fPIC -pthread -rdynamic", 
+    "allocator": "tcmalloc"
+},
+{
+    "totalSize": 301989888.0, 
+    "ok": 1.0, 
+    "databases": [
+        {
+            "sizeOnDisk": 218103808.0, 
+            "collections": [
+                "system.indexes", 
+                "epubweb_session", 
+                "serverlist", 
+                "serverlist_statistical", 
+                "tbluser_token", 
+                "usersessionbody", 
+                "iphone_device_token", 
+                "tbloffline_msg", 
+                "unreadmessages", 
+                "epub_bind_user"
+            ], 
+            "name": "imes", 
+            "empty": false
+        }, 
+        {
+            "sizeOnDisk": 83886080.0, 
+            "collections": [
+                "startup_log"
+            ], 
+            "name": "local", 
+            "empty": false
+        }
+    ]
+},
