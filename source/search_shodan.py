@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 import shodan
 
+import sys
+reload(sys)
+sys.setdefaultencoding( "utf-8" )
+
 YOUR_API_KEY = raw_input('input your API key')
 SHODAN_API_KEY = YOUR_API_KEY
 
